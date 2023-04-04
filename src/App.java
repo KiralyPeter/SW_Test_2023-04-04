@@ -1,9 +1,10 @@
-import views.MainFrame;
+import models.MainController;
+
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {        
         
-        new MainFrame();
-        
+        new MainController();
+
     }
 }
