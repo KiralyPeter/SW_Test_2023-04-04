@@ -16,8 +16,8 @@ public class MainController {
 
     private void handleEvents(){
         this.mainFrame.getCalcButton().addActionListener(e -> {
-            System.out.println("Működik")
-        };
+            System.out.println("Működik");
+        });
     }
     
 }
