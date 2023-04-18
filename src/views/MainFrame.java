@@ -18,8 +18,8 @@ public class MainFrame extends JFrame{
     }
     
     private void initComponent(){
-        this.perimeterPanel = new InputPanel("Kerület");
-        this.longPanel = new InputPanel("Hossz");
+        this.perimeterPanel = new InputPanel("Kerület (cm)");
+        this.longPanel = new InputPanel("Hossz (cm)");
         this.calcButton = new JButton("Számít");
         this.weightPanel = new InputPanel("Súly");
     }
