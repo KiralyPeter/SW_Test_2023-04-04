@@ -4,6 +4,8 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
+
 import java.awt.Dimension;
 
 public class InputPanel extends JPanel{
@@ -14,14 +16,17 @@ public class InputPanel extends JPanel{
         this.initComponent();
         this.setupComponent();
         this.addComponent();
+        this.setuPpanel();
     }
 
+    // másik konstruktor!!!
     // a megjelenő szöveget paraméterként kérjük 
     public InputPanel(String text) {
         this.initComponent();
         this.setupComponent();
         this.label.setText(text);        
         addComponent();
+        this.setuPpanel();
     }
 
     private void initComponent() {
@@ -34,6 +39,12 @@ public class InputPanel extends JPanel{
         this.field.setPreferredSize(new Dimension(100, 25));
     }
 
+    private void setuPpanel(){
+        this.setBorder(
+            new EmptyBorder(5, 10, 5, 10));
+    }
+
+    // beállítók
     public void setLabel(String text){
         this.label.setText(text);
     }
