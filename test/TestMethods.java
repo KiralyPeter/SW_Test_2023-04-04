@@ -30,4 +30,17 @@ public class TestMethods {
         boolean actual = this.methodNames.contains("calcWeight");
         assertTrue(actual);
     }
+
+    @Test
+    public void testStartCalcExist(){
+        boolean actual = this.methodNames.contains("startCalc");
+        assertTrue(actual);
+    }
+
+    @Test
+    public void testHandleEventsExist(){
+        boolean actual = this.methodNames.contains("handleEvents");
+        assertTrue(actual);
+    }
+    
 }
