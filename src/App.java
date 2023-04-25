@@ -1,4 +1,4 @@
-import models.MainController;
+import controllers.MainController;
 
 
 public class App {

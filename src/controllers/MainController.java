@@ -1,4 +1,4 @@
-package models;
+package controllers;
 
 import views.MainFrame;
 
@@ -29,7 +29,7 @@ public class MainController {
 
     }
 
-    private double calcWeight(double perimeter, double length){
+    public double calcWeight(double perimeter, double length){
         double weight = (perimeter * perimeter * length) / 11877;
         return weight;
     }
