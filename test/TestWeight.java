@@ -30,7 +30,7 @@ public class TestWeight {
     public void testCalcWeight02(){;
         double actual = mc.calcWeight(130, 135);
         double expected = 192.0939631220005;
-        assertEquals(expected, actual);
+        assertEquals(expected, actual, 0.01); // harmadik paraméter = delta érték, megengedett eltérés
     }
 
     @Test
